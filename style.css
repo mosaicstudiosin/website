@@ -1,0 +1,116 @@
+:root {
+    --absolute-black: #000000;
+    --background-black: #121212;
+    --lightest-black: #252525;
+    --black: #2b282c;
+    --light-black: #4f4b50;
+    --blue: #53c8ea;
+    --light-blue: #77d4ee;
+    --green: #648170;
+    --light-green: #a29c87;
+    --red: #bf4e6b;
+    --light-red: #c86881;
+    --lightest-red: #c868814f;
+    --yellow: #ffce7a;
+    --light-yellow: #f6e8d0;
+    --white: #ffffff;
+}
+
+
+
+
+body {
+    overflow: hidden;
+    margin: 0;
+    height: 100vh;
+    gap: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-black);
+    background-image: linear-gradient(var(--lightest-black) 1px, transparent 1px), linear-gradient(to right, var(--lightest-black) 1px, var(--background-black) 1px);
+    background-size: 12px 12px;
+
+}
+
+.main-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.title {
+    text-align: center;
+    /*text-shadow: -3px 1px 0 #F6E8D0;*/
+    filter: drop-shadow(-3px 1px #F6E8D0);
+    font-family: Inter, sans-serif;
+    font-size: 8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+
+
+    background: linear-gradient(96deg, #BF4E6B 17.29%, #53C8EA 69.37%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*.title:after {*/
+/*    transform: translate(-8px, -8px);*/
+/*    content: "Coming Soon!";*/
+/*    !*position: absolute;*!*/
+/*    left: 0;*/
+/*    top: 0;*/
+
+/*    margin-left: -100%;*/
+/*}*/
+
+.bottom-circles {
+    position: absolute;
+    /*right: 5.5085rem;*/
+    bottom: 0;
+    /*bottom: -45.054rem;*/
+}
+
+
+.left-div {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9rem;
+
+}
+
+.line-consistent {
+    background: #4F4B50;
+    width: 0.0625rem;
+
+}
+
+#line-top {
+    height: 60%;
+
+}
+
+
+#line-bottom {
+    height: 20%;
+
+}
+
+.socials{
+    height: 2rem;
+}
+
+.socials:hover {
+    cursor: pointer;
+}
