@@ -1,0 +1,6 @@
+# Redirects from what the browser requests to what we serve
+
+/home                   /
+/ig                     https://instagram.com/mosaicstudiosin
+/instagram              https://instagram.com/mosaicstudiosin
+/gram                   https://instagram.com/mosaicstudiosin
