@@ -30,6 +30,17 @@
 
 .hamburger {
 	display: none;
+	overflow: visible;
+}
+
+.burgerline,
+.hamburger {
+	cursor: pointer;
+	transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
+}
+
+.hamburger:hover .burgerline {
+	fill: var(--light-yellow);
 }
 
 .navlinks {
@@ -75,11 +86,26 @@
 
 	.navtextopen {
 		height: 17em;
+		/* height: calc(100vh - 5.6em); */
 	}
 }
 
+.hamburger.active {
+	transform: translateX(20%);
+}
+.active .path1 {
+	rotate: 45deg;
+	transform: translateX(-4%);
+}
 .active .path2 {
 	opacity: 0;
+	fill: var(--black) !important;
+	/* scale: 0 1; */
+	transform: translateX(-200%);
+}
+.active .path3 {
+	transform: translateX(-54.5%) translateY(-20%);
+	rotate: -45deg;
 }
 
 .nav-lower {

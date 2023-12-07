@@ -38,7 +38,7 @@ export default function Navbar() {
 					<li>Contacts</li>
 				</ul>
 				<HamburgerIcon
-					active={false}
+					active={navOpen}
 					height={20}
 					onclick={() => {
 						setNavOpen(!navOpen);
