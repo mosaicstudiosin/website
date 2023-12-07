@@ -1,28 +1,35 @@
 :root {
-  --absolute-black: #000000;
-  --background-black: #121212;
-  --lightest-black: #252525;
-  --black: #2b282c;
-  --light-black: #4f4b50;
-  --blue: #53c8ea;
-  --light-blue: #77d4ee;
-  --green: #648170;
-  --light-green: #a29c87;
-  --red: #bf4e6b;
-  --light-red: #c86881;
-  --lightest-red: #c868814f;
-  --yellow: #ffce7a;
-  --light-yellow: #f6e8d0;
-  --white: #ffffff;
+	--absolute-black: #000000;
+	--background-black: #121212;
+	--lightest-black: #252525;
+	--black: #2b282c;
+	--light-black: #4f4b50;
+	--blue: #53c8ea;
+	--light-blue: #77d4ee;
+	--green: #648170;
+	--light-green: #a29c87;
+	--red: #bf4e6b;
+	--light-red: #c86881;
+	--lightest-red: #c868814f;
+	--yellow: #ffce7a;
+	--light-yellow: #f6e8d0;
+	--white: #ffffff;
 }
 
-
 body {
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-  margin: 0;
-  background-color: var(--background-black);
-  background-image: linear-gradient(var(--lightest-black) 1px, transparent 1px), linear-gradient(to right, var(--lightest-black) 1px, var(--background-black) 1px);
-  background-size: 12px 12px;
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	margin: 0;
+	background-color: var(--background-black);
+	background-image: linear-gradient(
+			var(--lightest-black) 1px,
+			transparent 1px
+		),
+		linear-gradient(
+			to right,
+			var(--lightest-black) 1px,
+			var(--background-black) 1px
+		);
+	background-size: 12px 12px;
 }

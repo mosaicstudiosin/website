@@ -1,102 +1,90 @@
 :root {
-    --black: #2B282C;
-
+	--black: #2b282c;
 }
 
 .nav-main {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 }
-
 
 .navcontainer {
-    background-color: var(--black);
-    width: calc(100% - 2em - 6em);
-    margin: 1em;
-    border-radius: 1rem;
+	background-color: var(--black);
+	width: calc(100% - 2em - 6em);
+	margin: 1em;
+	border-radius: 1rem;
 
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-shrink: 0;
-    align-self: stretch;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-shrink: 0;
+	align-self: stretch;
 
-    padding: 0 3em;
+	padding: 0 3em;
 }
-
-
-
 
 .ufored {
-    width: 2.5em;
+	width: 2.5em;
 }
 
-
-
 .hamburger {
-    display: none;
-
+	display: none;
 }
 
 .navlinks {
-    padding: 0;
-    font-family: var(--font-blackoutmidnight), sans-serif;
-    color: #fff;
-    /*min-width: 25%;*/
-    list-style-type: none;
-    display: flex;
-    gap: 1em;
-    flex-direction: row;
-    justify-content: space-between;
+	padding: 0;
+	font-family: var(--font-blackoutmidnight), sans-serif;
+	color: #fff;
+	/*min-width: 25%;*/
+	list-style-type: none;
+	display: flex;
+	gap: 1em;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .navlinks li {
-    font-size: 1.5em;
-
+	font-size: 1.5em;
 }
 
 @media (max-width: 640px) {
-    .navcontainer {
-        flex-direction: column;
-        align-items: flex-start;
-        height: 6.25em;
-        transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
-    }
+	.navcontainer {
+		flex-direction: column;
+		align-items: flex-start;
+		height: 6.25em;
+		transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
+	}
 
-    .ufored {
-        position: absolute;
-    }
+	.ufored {
+		position: absolute;
+	}
 
-    .navlinks {
-        /*display: none;*/
-        flex-direction: column;
-        margin-top: 6.75em;
-    }
+	.navlinks {
+		/*display: none;*/
+		flex-direction: column;
+		margin-top: 6.75em;
+	}
 
-    .hamburger {
-        display: block;
-        position: absolute;
-        right: 4em;
-        top: 3.45em;
-    }
+	.hamburger {
+		display: block;
+		position: absolute;
+		right: 4em;
+		top: 3.45em;
+	}
 
-    .navtextopen {
-
-        height: 17em;
-    }
-
+	.navtextopen {
+		height: 17em;
+	}
 }
 
-
 .active .path2 {
-    opacity: 0;
+	opacity: 0;
 }
 
 .nav-lower {
-    position: absolute;
-    bottom: 0;
-    height: calc(100% - 18.5em);
-    width: 100vw;
+	position: absolute;
+	bottom: 0;
+	height: calc(100% - 18.5em);
+	width: 100vw;
 }

@@ -2,7 +2,10 @@ import React from "react";
 
 export default function HamburgerIcon(props: Props) {
 	return (
-		<svg onClick={props.onclick as unknown as React.MouseEventHandler<SVGSVGElement>}
+		<svg
+			onClick={
+				props.onclick as unknown as React.MouseEventHandler<SVGSVGElement>
+			}
 			xmlns="http://www.w3.org/2000/svg"
 			height={props.height}
 			viewBox="0 0 49 32"
@@ -31,5 +34,5 @@ export default function HamburgerIcon(props: Props) {
 interface Props {
 	active: boolean;
 	height: number;
-	onclick: ()=>void;
+	onclick: () => void;
 }
