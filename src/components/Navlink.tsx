@@ -1,14 +1,12 @@
-'use client';
+"use client";
 
 import localFont from "next/font/local";
 const blackoutmidnight = localFont({
-    src: "../../public/fonts/Blackout-Midnight.ttf",
-    display: "swap",
-    variable: "--font-blackoutmidnight"
+	src: "../../public/fonts/Blackout-Midnight.ttf",
+	display: "swap",
+	variable: "--font-blackoutmidnight"
 });
 
-export default function Navlink(){
-    return (
-
-    )
+export default function Navlink() {
+	return <></>;
 }
